@@ -197,8 +197,8 @@
     _itemModel = itemModel;
     self.backgroundImageView = itemModel.backgroundImageView; // 先添加背景
     self.title = _itemModel.itemTitle;
-    self.normalImage = [UIImage imageNamed:_itemModel.normalImageName];
-    self.selectImage = [UIImage imageNamed:_itemModel.selectImageName];
+    self.normalImage = _itemModel.normalImage ?: [UIImage imageNamed:_itemModel.normalImageName];
+    self.selectImage = _itemModel.selectImage ?: [UIImage imageNamed:_itemModel.selectImageName];
     self.normalColor = _itemModel.normalColor;
     self.selectColor = _itemModel.selectColor;
     self.normalTintColor = _itemModel.normalTintColor;

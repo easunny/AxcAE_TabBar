@@ -73,6 +73,10 @@ typedef void(^CustomInteractionEffectBlock) (AxcAE_TabBarItem *item);
 @property (nonatomic, strong) UIColor *selectColor;
 
 #pragma mark - 图片控制类
+// 选中后的图片
+@property(nonatomic, copy)UIImage *selectImage;
+// 正常的图片
+@property(nonatomic, copy)UIImage *normalImage;
 // 选中后的图片名称
 @property(nonatomic, copy)NSString *selectImageName;
 // 正常的图片名称

@@ -85,7 +85,7 @@
     if (isTitleLabelSize){
         titleFrame.size = self.itemModel.titleLabelSize;
     }else{
-        titleFrame.size = CGSizeMake(marginWidth, self.frame.size.height - iconImgFrame.size.height - self.itemModel.componentMargin.bottom);
+        titleFrame.size = CGSizeMake(marginWidth, self.frame.size.height - self.itemModel.componentMargin.top - iconImgFrame.size.height - self.itemModel.componentMargin.bottom);
     }
     // 至此大小已计算完毕，开始布局
     self.titleLabel.hidden = NO;
